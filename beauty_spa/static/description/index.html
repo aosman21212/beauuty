@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Beauty Spa Management — Odoo 19</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; background: #fff; }
+  .banner { width: 100%; display: block; }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  .header { display: flex; align-items: center; gap: 20px; padding: 30px 0 20px; }
+  .header img.icon { width: 80px; height: 80px; border-radius: 50%; }
+  .header h1 { font-size: 2rem; color: #880e4f; }
+  .header p { color: #555; font-size: 1.05rem; margin-top: 4px; }
+
+  /* Feature grid */
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 30px 0; }
+  .feature { background: #fff0f5; border-left: 4px solid #e91e63; border-radius: 6px; padding: 16px; }
+  .feature .icon-big { font-size: 2rem; margin-bottom: 8px; }
+  .feature h3 { color: #880e4f; font-size: 1rem; margin-bottom: 6px; }
+  .feature p { font-size: 0.88rem; color: #555; line-height: 1.5; }
+
+  /* Section titles */
+  h2 { font-size: 1.45rem; color: #880e4f; margin: 36px 0 14px;
+       border-bottom: 2px solid #fce4ec; padding-bottom: 8px; }
+
+  /* Module structure table */
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 24px; }
+  th { background: #880e4f; color: #fff; padding: 10px 14px; text-align: left; }
+  td { padding: 9px 14px; border-bottom: 1px solid #fce4ec; }
+  tr:nth-child(even) td { background: #fff0f5; }
+
+  /* Screenshots */
+  .screenshots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 10px 0 30px; }
+  .screenshots figure { margin: 0; }
+  .screenshots img { width: 100%; border-radius: 6px; border: 1px solid #dee2e6;
+                     box-shadow: 0 2px 8px rgba(0,0,0,.1); display: block; }
+  .screenshots figcaption { font-size: 0.8rem; color: #888; text-align: center; margin-top: 6px; }
+
+  /* Badges */
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0 24px; }
+  .badge { background: #fce4ec; color: #880e4f; border: 1px solid #e91e63;
+           border-radius: 20px; padding: 5px 14px; font-size: 0.85rem; font-weight: 600; }
+
+  /* Install note */
+  .install { background: #fce4ec; border-radius: 8px; padding: 18px 22px; margin: 20px 0 36px; font-size: 0.9rem; }
+  .install code { background: #fff; padding: 2px 6px; border-radius: 3px; font-size: 0.85rem; color: #c2185b; }
+</style>
+</head>
+<body>
+
+<!-- Banner -->
+<img class="banner" src="banner.svg" alt="Beauty Spa Management Banner"/>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <img class="icon" src="icon.png" alt="Beauty Spa Icon"/>
+    <div>
+      <h1>Beauty Spa Management</h1>
+      <p>Complete salon &amp; spa management for <strong>Odoo 19</strong> — appointments, therapists, packages &amp; invoicing.</p>
+    </div>
+  </div>
+
+  <!-- Badges -->
+  <div class="badges">
+    <span class="badge">🌸 Calendar View</span>
+    <span class="badge">💆 Therapist Profiles</span>
+    <span class="badge">🧴 Treatment Packages</span>
+    <span class="badge">📋 Kanban Board</span>
+    <span class="badge">🧾 One-Click Invoice</span>
+    <span class="badge">📄 PDF Confirmation</span>
+    <span class="badge">🔒 Role-Based Access</span>
+    <span class="badge">🎭 Demo Data</span>
+  </div>
+
+  <!-- Features -->
+  <h2>Key Features</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="icon-big">📅</div>
+      <h3>Appointment Calendar</h3>
+      <p>Drag-and-drop weekly/monthly calendar. Colour-coded by therapist. Overlap detection prevents double-booking.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">💆</div>
+      <h3>Therapist Management</h3>
+      <p>Profiles with photo, specialisation, contact info and service assignments. Smart button shows appointment history.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">🧴</div>
+      <h3>Services &amp; Categories</h3>
+      <p>Full service catalogue with categories, duration, pricing and optional linkage to invoiceable Odoo products.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">🎁</div>
+      <h3>Treatment Packages</h3>
+      <p>Bundle multiple services at a special price. Savings calculated automatically. Apply a package to any appointment.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">🏠</div>
+      <h3>Treatment Rooms</h3>
+      <p>Manage room capacity and notes. Assign a room per appointment to avoid conflicts.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">🧾</div>
+      <h3>Invoice Integration</h3>
+      <p>Generate an Odoo invoice directly from a confirmed appointment with one click. Payment status shown on the form.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">⊞</div>
+      <h3>Kanban by Status</h3>
+      <p>Visual pipeline: New → Confirmed → In Progress → Done. Drag cards between columns or use status buttons.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">📄</div>
+      <h3>PDF Confirmation</h3>
+      <p>Print a professional appointment confirmation for clients, including service list, therapist and room details.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-big">🔒</div>
+      <h3>Role-Based Security</h3>
+      <p>Two built-in groups: <em>Manager</em> (full access) and <em>Receptionist</em> (read &amp; book, no deletion).</p>
+    </div>
+  </div>
+
+  <!-- Screenshots -->
+  <h2>Screenshots</h2>
+  <div class="screenshots">
+    <figure>
+      <img src="screenshots/01_calendar.svg" alt="Calendar Week View"/>
+      <figcaption>Calendar — Week View with therapist colour coding</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/02_appointment_form.svg" alt="Appointment Form"/>
+      <figcaption>Appointment Form — statusbar, invoice button &amp; chatter</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/03_kanban.svg" alt="Kanban Board"/>
+      <figcaption>Kanban Board — appointments grouped by status</figcaption>
+    </figure>
+  </div>
+
+  <!-- Module Structure -->
+  <h2>Module Structure</h2>
+  <table>
+    <tr><th>Model</th><th>Description</th><th>Key Fields</th></tr>
+    <tr><td><code>spa.service.category</code></td><td>Service Categories</td><td>name, colour, sequence</td></tr>
+    <tr><td><code>spa.service</code></td><td>Individual Services</td><td>name, category, duration, price, product</td></tr>
+    <tr><td><code>spa.therapist</code></td><td>Therapist Profiles</td><td>name, photo, specialisation, services</td></tr>
+    <tr><td><code>spa.room</code></td><td>Treatment Rooms</td><td>name, capacity</td></tr>
+    <tr><td><code>spa.package</code></td><td>Service Packages</td><td>lines, list_price, package_price, savings</td></tr>
+    <tr><td><code>spa.appointment</code></td><td>Appointments (main)</td><td>client, therapist, room, date, services, state, invoice</td></tr>
+  </table>
+
+  <!-- Technical Info -->
+  <h2>Technical Information</h2>
+  <table>
+    <tr><th>Property</th><th>Value</th></tr>
+    <tr><td>Odoo Version</td><td>19.0</td></tr>
+    <tr><td>Dependencies</td><td>base, mail, account</td></tr>
+    <tr><td>License</td><td>LGPL-3</td></tr>
+    <tr><td>Sequence</td><td>APT/YYYY/MM/NNNN</td></tr>
+    <tr><td>Views</td><td>Calendar, Kanban, List, Form (with chatter), Search</td></tr>
+    <tr><td>Reports</td><td>PDF Appointment Confirmation (QWeb)</td></tr>
+    <tr><td>Demo Data</td><td>5 categories, 10 services, 4 therapists, 4 rooms, 3 packages, 5 appointments</td></tr>
+  </table>
+
+  <!-- Install -->
+  <div class="install">
+    <strong>Installation:</strong> Install via <em>Apps</em> menu (search "Beauty Spa") or from the command line:<br/><br/>
+    <code>odoo-bin -i beauty_spa -d &lt;your_database&gt;</code>
+  </div>
+
+</div>
+</body>
+</html>

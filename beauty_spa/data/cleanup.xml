@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Cleanup: remove any orphaned "Today's Appointments" action/menu
+        that may have been created by an earlier version of this module
+        before those records were removed from the XML data files.
+    -->
+    <delete model="ir.actions.act_window"
+            search="[('name', '=', &quot;Today&apos;s Appointments&quot;), ('res_model', '=', 'spa.appointment')]"/>
+    <delete model="ir.ui.menu"
+            search="[('name', '=', 'Today'), ('parent_id.name', '=', 'Appointments'), ('action', '=', False)]"/>
+</odoo>

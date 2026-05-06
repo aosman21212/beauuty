@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_spa_appointment_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <!-- Header -->
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <h2 style="color:#a0522d;">Appointment Confirmation</h2>
+                                <h4 class="text-muted"><t t-esc="o.name"/></h4>
+                            </div>
+                            <div class="col-6 text-end">
+                                <span t-if="o.state == 'confirmed'"
+                                      class="badge bg-info fs-6">Confirmed</span>
+                                <span t-if="o.state == 'in_progress'"
+                                      class="badge bg-warning fs-6">In Progress</span>
+                                <span t-if="o.state == 'done'"
+                                      class="badge bg-success fs-6">Done</span>
+                                <span t-if="o.state == 'draft'"
+                                      class="badge bg-secondary fs-6">Draft</span>
+                            </div>
+                        </div>
+
+                        <!-- Appointment details -->
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <table class="table table-sm">
+                                    <tr>
+                                        <th>Client</th>
+                                        <td><t t-esc="o.client_id.name"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Therapist</th>
+                                        <td><t t-esc="o.therapist_id.name"/></td>
+                                    </tr>
+                                    <tr t-if="o.room_id">
+                                        <th>Room</th>
+                                        <td><t t-esc="o.room_id.name"/></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Date &amp; Time</th>
+                                        <td>
+                                            <t t-esc="o.appointment_date"
+                                               t-options='{"widget": "datetime", "format": "dd/MM/yyyy HH:mm"}'/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Duration</th>
+                                        <td><t t-esc="int(o.duration)"/> min</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Services or Package -->
+                        <div t-if="o.package_id">
+                            <h5>Package: <t t-esc="o.package_id.name"/></h5>
+                            <table class="table table-sm table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th class="text-end">Duration (min)</th>
+                                        <th class="text-end">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.package_id.line_ids" t-as="line">
+                                        <td><t t-esc="line.service_id.name"/>
+                                            <t t-if="line.quantity &gt; 1">
+                                                × <t t-esc="line.quantity"/>
+                                            </t>
+                                        </td>
+                                        <td class="text-end">
+                                            <t t-esc="int(line.service_id.duration * line.quantity)"/>
+                                        </td>
+                                        <td class="text-end">
+                                            <t t-esc="line.subtotal"
+                                               t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="2">Package Price</th>
+                                        <th class="text-end">
+                                            <t t-esc="o.package_id.package_price"
+                                               t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div t-else="">
+                            <h5>Services</h5>
+                            <table class="table table-sm table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th class="text-end">Duration (min)</th>
+                                        <th class="text-end">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.service_ids" t-as="svc">
+                                        <td><t t-esc="svc.name"/></td>
+                                        <td class="text-end"><t t-esc="int(svc.duration)"/></td>
+                                        <td class="text-end">
+                                            <t t-esc="svc.price"
+                                               t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="2">Total</th>
+                                        <th class="text-end">
+                                            <t t-esc="o.total_price"
+                                               t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <!-- Notes -->
+                        <div t-if="o.notes" class="mt-4">
+                            <h5>Notes</h5>
+                            <p><t t-esc="o.notes"/></p>
+                        </div>
+
+                        <!-- Footer note -->
+                        <div class="mt-5 text-muted text-center small">
+                            Thank you for choosing our spa. Please arrive 10 minutes
+                            before your appointment time.
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

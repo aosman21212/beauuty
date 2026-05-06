@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ═══════════════════════════════════════════════════════════
+         SERVICE CATEGORIES
+    ═══════════════════════════════════════════════════════════ -->
+    <record id="cat_massage" model="spa.service.category">
+        <field name="name">Massage</field>
+        <field name="sequence">10</field>
+        <field name="color">1</field>
+    </record>
+    <record id="cat_facial" model="spa.service.category">
+        <field name="name">Facial &amp; Skin Care</field>
+        <field name="sequence">20</field>
+        <field name="color">2</field>
+    </record>
+    <record id="cat_body" model="spa.service.category">
+        <field name="name">Body Treatments</field>
+        <field name="sequence">30</field>
+        <field name="color">3</field>
+    </record>
+    <record id="cat_nail" model="spa.service.category">
+        <field name="name">Nail Care</field>
+        <field name="sequence">40</field>
+        <field name="color">4</field>
+    </record>
+    <record id="cat_hair" model="spa.service.category">
+        <field name="name">Hair</field>
+        <field name="sequence">50</field>
+        <field name="color">5</field>
+    </record>
+    <record id="cat_waxing" model="spa.service.category">
+        <field name="name">Waxing</field>
+        <field name="sequence">60</field>
+        <field name="color">6</field>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════════════════════════ -->
+    <!-- Massage -->
+    <record id="svc_swedish" model="spa.service">
+        <field name="name">Swedish Massage</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">60</field>
+        <field name="price">80</field>
+    </record>
+    <record id="svc_deep_tissue" model="spa.service">
+        <field name="name">Deep Tissue Massage</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">90</field>
+        <field name="price">110</field>
+    </record>
+    <record id="svc_hot_stone" model="spa.service">
+        <field name="name">Hot Stone Massage</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">90</field>
+        <field name="price">120</field>
+    </record>
+    <record id="svc_aromatherapy" model="spa.service">
+        <field name="name">Aromatherapy Massage</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">75</field>
+        <field name="price">95</field>
+    </record>
+    <record id="svc_reflexology" model="spa.service">
+        <field name="name">Reflexology</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">45</field>
+        <field name="price">65</field>
+    </record>
+    <record id="svc_couples" model="spa.service">
+        <field name="name">Couples Massage</field>
+        <field name="category_id" ref="cat_massage"/>
+        <field name="duration">60</field>
+        <field name="price">160</field>
+    </record>
+    <!-- Facial -->
+    <record id="svc_hydra_facial" model="spa.service">
+        <field name="name">HydraFacial</field>
+        <field name="category_id" ref="cat_facial"/>
+        <field name="duration">60</field>
+        <field name="price">150</field>
+    </record>
+    <record id="svc_classic_facial" model="spa.service">
+        <field name="name">Classic Facial</field>
+        <field name="category_id" ref="cat_facial"/>
+        <field name="duration">45</field>
+        <field name="price">75</field>
+    </record>
+    <record id="svc_anti_aging" model="spa.service">
+        <field name="name">Anti-Aging Facial</field>
+        <field name="category_id" ref="cat_facial"/>
+        <field name="duration">75</field>
+        <field name="price">130</field>
+    </record>
+    <record id="svc_microderm" model="spa.service">
+        <field name="name">Microdermabrasion</field>
+        <field name="category_id" ref="cat_facial"/>
+        <field name="duration">60</field>
+        <field name="price">120</field>
+    </record>
+    <record id="svc_led_therapy" model="spa.service">
+        <field name="name">LED Light Therapy</field>
+        <field name="category_id" ref="cat_facial"/>
+        <field name="duration">30</field>
+        <field name="price">60</field>
+    </record>
+    <!-- Body -->
+    <record id="svc_body_wrap" model="spa.service">
+        <field name="name">Detox Body Wrap</field>
+        <field name="category_id" ref="cat_body"/>
+        <field name="duration">60</field>
+        <field name="price">95</field>
+    </record>
+    <record id="svc_exfoliation" model="spa.service">
+        <field name="name">Full Body Exfoliation</field>
+        <field name="category_id" ref="cat_body"/>
+        <field name="duration">45</field>
+        <field name="price">70</field>
+    </record>
+    <record id="svc_mud_wrap" model="spa.service">
+        <field name="name">Mineral Mud Wrap</field>
+        <field name="category_id" ref="cat_body"/>
+        <field name="duration">60</field>
+        <field name="price">100</field>
+    </record>
+    <!-- Nail -->
+    <record id="svc_manicure" model="spa.service">
+        <field name="name">Classic Manicure</field>
+        <field name="category_id" ref="cat_nail"/>
+        <field name="duration">40</field>
+        <field name="price">35</field>
+    </record>
+    <record id="svc_pedicure" model="spa.service">
+        <field name="name">Classic Pedicure</field>
+        <field name="category_id" ref="cat_nail"/>
+        <field name="duration">50</field>
+        <field name="price">45</field>
+    </record>
+    <record id="svc_gel_mani" model="spa.service">
+        <field name="name">Gel Manicure</field>
+        <field name="category_id" ref="cat_nail"/>
+        <field name="duration">60</field>
+        <field name="price">55</field>
+    </record>
+    <record id="svc_gel_pedi" model="spa.service">
+        <field name="name">Gel Pedicure</field>
+        <field name="category_id" ref="cat_nail"/>
+        <field name="duration">70</field>
+        <field name="price">65</field>
+    </record>
+    <!-- Hair -->
+    <record id="svc_blowdry" model="spa.service">
+        <field name="name">Blow Dry &amp; Style</field>
+        <field name="category_id" ref="cat_hair"/>
+        <field name="duration">45</field>
+        <field name="price">55</field>
+    </record>
+    <record id="svc_hair_colour" model="spa.service">
+        <field name="name">Hair Colour &amp; Highlights</field>
+        <field name="category_id" ref="cat_hair"/>
+        <field name="duration">120</field>
+        <field name="price">150</field>
+    </record>
+    <record id="svc_keratin" model="spa.service">
+        <field name="name">Keratin Treatment</field>
+        <field name="category_id" ref="cat_hair"/>
+        <field name="duration">90</field>
+        <field name="price">180</field>
+    </record>
+    <!-- Waxing -->
+    <record id="svc_wax_full_leg" model="spa.service">
+        <field name="name">Full Leg Wax</field>
+        <field name="category_id" ref="cat_waxing"/>
+        <field name="duration">45</field>
+        <field name="price">60</field>
+    </record>
+    <record id="svc_wax_eyebrow" model="spa.service">
+        <field name="name">Eyebrow Wax &amp; Shape</field>
+        <field name="category_id" ref="cat_waxing"/>
+        <field name="duration">20</field>
+        <field name="price">25</field>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TREATMENT ROOMS
+    ═══════════════════════════════════════════════════════════ -->
+    <record id="room_serenity" model="spa.room">
+        <field name="name">Serenity Suite</field>
+        <field name="capacity">1</field>
+        <field name="description">Premium single room with heated table and soft lighting.</field>
+    </record>
+    <record id="room_harmony" model="spa.room">
+        <field name="name">Harmony Room</field>
+        <field name="capacity">1</field>
+        <field name="description">Quiet room ideal for facials and body treatments.</field>
+    </record>
+    <record id="room_couples" model="spa.room">
+        <field name="name">Couples Suite</field>
+        <field name="capacity">2</field>
+        <field name="description">Spacious room with two tables, perfect for couples packages.</field>
+    </record>
+    <record id="room_nail" model="spa.room">
+        <field name="name">Nail Studio</field>
+        <field name="capacity">3</field>
+        <field name="description">Bright nail studio with UV lamps and pedicure chairs.</field>
+    </record>
+    <record id="room_vip" model="spa.room">
+        <field name="name">VIP Suite</field>
+        <field name="capacity">1</field>
+        <field name="description">Exclusive suite with private sauna, jacuzzi and premium amenities.</field>
+    </record>
+    <record id="room_hair" model="spa.room">
+        <field name="name">Hair Salon</field>
+        <field name="capacity">4</field>
+        <field name="description">Full-service hair salon with 4 styling stations.</field>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         THERAPISTS
+    ═══════════════════════════════════════════════════════════ -->
+    <record id="therapist_sophia" model="spa.therapist">
+        <field name="name">Sophia Laurent</field>
+        <field name="job_title">Senior Massage Therapist</field>
+        <field name="phone">+1 555-0101</field>
+        <field name="email">sophia@example.com</field>
+        <field name="color">1</field>
+        <field name="service_ids" eval="[(6,0,[
+            ref('svc_swedish'), ref('svc_deep_tissue'), ref('svc_hot_stone'),
+            ref('svc_aromatherapy'), ref('svc_reflexology'), ref('svc_couples'),
+        ])]"/>
+    </record>
+    <record id="therapist_mia" model="spa.therapist">
+        <field name="name">Mia Chen</field>
+        <field name="job_title">Facial &amp; Skin Specialist</field>
+        <field name="phone">+1 555-0102</field>
+        <field name="email">mia@example.com</field>
+        <field name="color">2</field>
+        <field name="service_ids" eval="[(6,0,[
+            ref('svc_hydra_facial'), ref('svc_classic_facial'),
+            ref('svc_anti_aging'), ref('svc_microderm'), ref('svc_led_therapy'),
+        ])]"/>
+    </record>
+    <record id="therapist_elena" model="spa.therapist">
+        <field name="name">Elena Rossi</field>
+        <field name="job_title">Body Treatment Expert</field>
+        <field name="phone">+1 555-0103</field>
+        <field name="email">elena@example.com</field>
+        <field name="color">3</field>
+        <field name="service_ids" eval="[(6,0,[
+            ref('svc_body_wrap'), ref('svc_exfoliation'), ref('svc_mud_wrap'),
+            ref('svc_aromatherapy'), ref('svc_swedish'),
+        ])]"/>
+    </record>
+    <record id="therapist_jade" model="spa.therapist">
+        <field name="name">Jade Williams</field>
+        <field name="job_title">Nail &amp; Hair Technician</field>
+        <field name="phone">+1 555-0104</field>
+        <field name="email">jade@example.com</field>
+        <field name="color">4</field>
+        <field name="service_ids" eval="[(6,0,[
+            ref('svc_manicure'), ref('svc_pedicure'),
+            ref('svc_gel_mani'), ref('svc_gel_pedi'), ref('svc_blowdry'),
+        ])]"/>
+    </record>
+    <record id="therapist_aisha" model="spa.therapist">
+        <field name="name">Aisha Johnson</field>
+        <field name="job_title">Hair Colour &amp; Wax Specialist</field>
+        <field name="phone">+1 555-0105</field>
+        <field name="email">aisha@example.com</field>
+        <field name="color">5</field>
+        <field name="service_ids" eval="[(6,0,[
+            ref('svc_hair_colour'), ref('svc_keratin'), ref('svc_blowdry'),
+            ref('svc_wax_full_leg'), ref('svc_wax_eyebrow'),
+        ])]"/>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PACKAGES
+    ═══════════════════════════════════════════════════════════ -->
+    <record id="pkg_relax" model="spa.package">
+        <field name="name">Relaxation Retreat</field>
+        <field name="package_price">140</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_swedish'),       'quantity': 1}),
+            (0,0,{'service_id': ref('svc_classic_facial'),'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_pamper" model="spa.package">
+        <field name="name">Full Pamper Day</field>
+        <field name="package_price">280</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_deep_tissue'),  'quantity': 1}),
+            (0,0,{'service_id': ref('svc_hydra_facial'), 'quantity': 1}),
+            (0,0,{'service_id': ref('svc_manicure'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_pedicure'),     'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_bridal" model="spa.package">
+        <field name="name">Bridal Glow Package</field>
+        <field name="package_price">320</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_hot_stone'),    'quantity': 1}),
+            (0,0,{'service_id': ref('svc_hydra_facial'), 'quantity': 1}),
+            (0,0,{'service_id': ref('svc_gel_mani'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_gel_pedi'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_blowdry'),      'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_morning_glow" model="spa.package">
+        <field name="name">Morning Glow</field>
+        <field name="package_price">200</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_aromatherapy'), 'quantity': 1}),
+            (0,0,{'service_id': ref('svc_anti_aging'),   'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_nail_heaven" model="spa.package">
+        <field name="name">Nail Heaven</field>
+        <field name="package_price">100</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_gel_mani'), 'quantity': 1}),
+            (0,0,{'service_id': ref('svc_gel_pedi'), 'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_detox" model="spa.package">
+        <field name="name">Deep Detox Day</field>
+        <field name="package_price">230</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_mud_wrap'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_exfoliation'),  'quantity': 1}),
+            (0,0,{'service_id': ref('svc_reflexology'),  'quantity': 1}),
+        ]"/>
+    </record>
+    <record id="pkg_vip_day" model="spa.package">
+        <field name="name">VIP Luxury Day</field>
+        <field name="package_price">480</field>
+        <field name="line_ids" eval="[
+            (0,0,{'service_id': ref('svc_hot_stone'),    'quantity': 1}),
+            (0,0,{'service_id': ref('svc_anti_aging'),   'quantity': 1}),
+            (0,0,{'service_id': ref('svc_gel_mani'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_gel_pedi'),     'quantity': 1}),
+            (0,0,{'service_id': ref('svc_hair_colour'),  'quantity': 1}),
+        ]"/>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SPA CLIENTS (res.partner)
+    ═══════════════════════════════════════════════════════════ -->
+    <record id="client_emma" model="res.partner">
+        <field name="name">Emma Thompson</field>
+        <field name="email">emma.thompson@example.com</field>
+        <field name="phone">+1 555-1001</field>
+    </record>
+    <record id="client_sarah" model="res.partner">
+        <field name="name">Sarah Johnson</field>
+        <field name="email">sarah.j@example.com</field>
+        <field name="phone">+1 555-1002</field>
+    </record>
+    <record id="client_maria" model="res.partner">
+        <field name="name">Maria Garcia</field>
+        <field name="email">maria.garcia@example.com</field>
+        <field name="phone">+1 555-1003</field>
+    </record>
+    <record id="client_lisa" model="res.partner">
+        <field name="name">Lisa Chen</field>
+        <field name="email">lisa.chen@example.com</field>
+        <field name="phone">+1 555-1004</field>
+    </record>
+    <record id="client_rachel" model="res.partner">
+        <field name="name">Rachel Wilson</field>
+        <field name="email">rachel.w@example.com</field>
+        <field name="phone">+1 555-1005</field>
+    </record>
+    <record id="client_jessica" model="res.partner">
+        <field name="name">Jessica Martinez</field>
+        <field name="email">jessica.m@example.com</field>
+        <field name="phone">+1 555-1006</field>
+    </record>
+    <record id="client_amanda" model="res.partner">
+        <field name="name">Amanda Brown</field>
+        <field name="email">amanda.b@example.com</field>
+        <field name="phone">+1 555-1007</field>
+    </record>
+    <record id="client_claire" model="res.partner">
+        <field name="name">Claire Dubois</field>
+        <field name="email">claire.d@example.com</field>
+        <field name="phone">+1 555-1008</field>
+    </record>
+    <record id="client_priya" model="res.partner">
+        <field name="name">Priya Patel</field>
+        <field name="email">priya.patel@example.com</field>
+        <field name="phone">+1 555-1009</field>
+    </record>
+    <record id="client_nina" model="res.partner">
+        <field name="name">Nina Kowalski</field>
+        <field name="email">nina.k@example.com</field>
+        <field name="phone">+1 555-1010</field>
+    </record>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         APPOINTMENTS
+         Carefully scheduled with NO therapist overlaps.
+         Layout: past (April) → current week (May 6-8) → future (May 9+)
+    ═══════════════════════════════════════════════════════════ -->
+
+    <!-- ── APRIL (past / done) ──────────────────────────────── -->
+
+    <!-- Sophia: Apr 7 09:00-10:00 -->
+    <record id="apt_001" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-04-07 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_swedish')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: Apr 7 11:00-12:30 -->
+    <record id="apt_002" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-04-07 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_deep_tissue')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: Apr 7 10:00-10:45 -->
+    <record id="apt_003" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-07 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_classic_facial')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: Apr 7 12:00-13:00 -->
+    <record id="apt_004" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-07 12:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hydra_facial')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 8 09:00-10:00 -->
+    <record id="apt_005" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-08 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 8 11:00-11:45 -->
+    <record id="apt_006" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-08 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_exfoliation')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: Apr 8 10:00-10:40 -->
+    <record id="apt_007" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-04-08 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_manicure')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: Apr 8 11:00-12:10 (gel mani+pedi = 130min) -->
+    <record id="apt_008" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-04-08 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_mani'),ref('svc_gel_pedi')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Aisha: Apr 10 10:00-12:00 -->
+    <record id="apt_009" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-04-10 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: Apr 14 09:00-10:15 (aromatherapy 75min) -->
+    <record id="apt_010" model="spa.appointment">
+        <field name="client_id" ref="client_nina"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-04-14 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_aromatherapy')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: Apr 14 11:00-12:30 (deep tissue 90min) -->
+    <record id="apt_011" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-04-14 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_deep_tissue')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: Apr 14 10:00-11:15 (anti-aging 75min) -->
+    <record id="apt_012" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-14 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_anti_aging')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 15 09:00-10:00 (body wrap) -->
+    <record id="apt_013" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-15 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 15 11:00-12:00 (mud wrap 60min) -->
+    <record id="apt_014" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-15 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_mud_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: Apr 15 09:00-10:30 (mani+pedi 90min) -->
+    <record id="apt_015" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-04-15 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_manicure'),ref('svc_pedicure')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: Apr 15 11:00-11:45 (blow dry) -->
+    <record id="apt_016" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-04-15 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_blowdry')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Aisha: Apr 17 09:00-09:45 (waxing) -->
+    <record id="apt_017" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-17 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_wax_full_leg')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Aisha: Apr 17 11:00-13:00 (hair colour) -->
+    <record id="apt_018" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-04-17 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: Apr 21 pkg_morning_glow (aromatherapy 75min + anti-aging 75min = 150min) 10:00-12:30 -->
+    <record id="apt_019" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-04-21 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_aromatherapy')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: Apr 21 10:00-11:00 (microderm 60min) -->
+    <record id="apt_020" model="spa.appointment">
+        <field name="client_id" ref="client_nina"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-21 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_microderm')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 22 10:00-11:00 (body wrap) -->
+    <record id="apt_021" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-22 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: Apr 22 10:00-12:10 (gel mani+pedi 130min) -->
+    <record id="apt_022" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-04-22 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_mani'),ref('svc_gel_pedi')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Aisha: Apr 24 10:00-12:00 (hair colour) -->
+    <record id="apt_023" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-04-24 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: Apr 28 09:00-10:30 (hot stone 90min) -->
+    <record id="apt_024" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-04-28 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hot_stone')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: Apr 28 09:00-10:00 (hydrafacial 60min) -->
+    <record id="apt_025" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-28 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hydra_facial')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: Apr 29 10:00-11:00 (body wrap) -->
+    <record id="apt_026" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-04-29 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+
+    <!-- ── CURRENT WEEK — May 6–8, 2026 ──────────────────── -->
+
+    <!-- Sophia: May 6 09:00-09:45 (reflexology 45min) -->
+    <record id="apt_027" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-05-06 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_reflexology')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Sophia: May 6 10:00-11:00 (swedish 60min) -->
+    <record id="apt_028" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-05-06 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_swedish')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Sophia: May 6 13:00-14:15 (aromatherapy 75min) -->
+    <record id="apt_029" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-05-06 13:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_aromatherapy')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Mia: May 6 09:00-09:45 (classic facial 45min) -->
+    <record id="apt_030" model="spa.appointment">
+        <field name="client_id" ref="client_nina"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-06 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_classic_facial')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Mia: May 6 11:30-12:30 (hydrafacial 60min) -->
+    <record id="apt_031" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_2"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-06 11:30:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hydra_facial')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Mia: May 6 14:00-15:15 (anti-aging 75min) -->
+    <record id="apt_032" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-06 14:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_anti_aging')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Elena: May 6 09:00-10:00 (body wrap 60min) -->
+    <record id="apt_033" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-06 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Elena: May 6 11:00-11:45 (exfoliation 45min) -->
+    <record id="apt_034" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-06 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_exfoliation')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Jade: May 6 09:00-10:30 (mani+pedi 90min) -->
+    <record id="apt_035" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_4"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-06 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_manicure'),ref('svc_pedicure')])]"/>
+        <field name="state">done</field>
+    </record>
+    <!-- Jade: May 6 11:00-11:45 (blow dry 45min) -->
+    <record id="apt_036" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-05-06 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_blowdry')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Jade: May 6 13:00-14:00 (gel mani 60min) -->
+    <record id="apt_037" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-06 13:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_mani')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Aisha: May 6 10:00-12:00 (hair colour 120min) -->
+    <record id="apt_038" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-05-06 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">in_progress</field>
+    </record>
+
+    <!-- May 7 -->
+    <!-- Sophia: May 7 09:00-10:30 (deep tissue 90min) -->
+    <record id="apt_039" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-05-07 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_deep_tissue')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Sophia: May 7 14:00 pkg_relax (swedish 60min + classic facial 45min = 105min → ends 15:45) -->
+    <record id="apt_040" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_3"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_couples"/>
+        <field name="appointment_date">2026-05-07 14:00:00</field>
+        <field name="package_id" ref="pkg_relax"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Mia: May 7 10:00-11:00 (hydrafacial 60min) -->
+    <record id="apt_041" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-07 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hydra_facial')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Elena: May 7 10:00-11:00 (body wrap 60min) -->
+    <record id="apt_042" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-07 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Jade: May 7 09:00-10:00 (gel mani 60min) -->
+    <record id="apt_043" model="spa.appointment">
+        <field name="client_id" ref="client_nina"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-07 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_mani')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Jade: May 7 11:00-12:10 (gel pedi 70min) -->
+    <record id="apt_044" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_5"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-07 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_pedi')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Aisha: May 7 09:00-09:45 (waxing 45min) -->
+    <record id="apt_045" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-07 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_wax_full_leg')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Aisha: May 7 11:00-13:00 (hair colour 120min) -->
+    <record id="apt_046" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-05-07 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+
+    <!-- May 8 -->
+    <!-- Sophia: May 8 09:00-10:30 (hot stone 90min) -->
+    <record id="apt_047" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-05-08 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hot_stone')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Mia: May 8 09:00-10:15 (anti-aging 75min) -->
+    <record id="apt_048" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-08 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_anti_aging')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Elena: May 8 10:00 pkg_pamper (deep tissue+hydrafacial+mani+pedi = 240min → ends 14:00) -->
+    <record id="apt_049" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_12"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-08 10:00:00</field>
+        <field name="package_id" ref="pkg_pamper"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Elena: May 8 15:00-15:45 (exfoliation 45min, after pkg_pamper ends 14:00) -->
+    <record id="apt_050" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-08 15:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_exfoliation')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Jade: May 8 10:00-12:10 (gel mani+pedi 130min) -->
+    <record id="apt_051" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-08 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_gel_mani'),ref('svc_gel_pedi')])]"/>
+        <field name="state">confirmed</field>
+    </record>
+    <!-- Aisha: May 8 10:00-10:45 (waxing 45min) -->
+    <record id="apt_052" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-08 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_wax_eyebrow')])]"/>
+        <field name="state">draft</field>
+    </record>
+
+    <!-- ── FUTURE — May 9–15, 2026 ────────────────────────── -->
+
+    <!-- Sophia: May 9 10:00-11:00 (swedish 60min) -->
+    <record id="apt_053" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-05-09 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_swedish')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Mia: May 9 10:00-11:00 (microderm 60min) -->
+    <record id="apt_054" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-09 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_microderm')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Elena: May 9 10:00-11:00 (body wrap 60min) -->
+    <record id="apt_055" model="spa.appointment">
+        <field name="client_id" ref="client_nina"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-09 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_body_wrap')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Jade: May 9 09:00-10:30 (mani+pedi 90min) -->
+    <record id="apt_056" model="spa.appointment">
+        <field name="client_id" ref="base.res_partner_6"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-09 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_manicure'),ref('svc_pedicure')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Aisha: May 9 10:00-12:00 (hair colour 120min) -->
+    <record id="apt_057" model="spa.appointment">
+        <field name="client_id" ref="client_emma"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-05-09 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hair_colour')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Sophia: May 11 09:00-10:30 (deep tissue 90min) -->
+    <record id="apt_058" model="spa.appointment">
+        <field name="client_id" ref="client_sarah"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_serenity"/>
+        <field name="appointment_date">2026-05-11 09:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_deep_tissue')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Sophia: May 11 14:00 pkg_vip_day (500 min total → too long; use pkg_morning_glow = 150min → ends 16:30) -->
+    <record id="apt_059" model="spa.appointment">
+        <field name="client_id" ref="client_maria"/>
+        <field name="therapist_id" ref="therapist_sophia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-05-11 12:00:00</field>
+        <field name="package_id" ref="pkg_morning_glow"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Mia: May 11 11:00-12:15 (anti-aging 75min) -->
+    <record id="apt_060" model="spa.appointment">
+        <field name="client_id" ref="client_lisa"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-11 11:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_anti_aging')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Elena: May 11 10:00-11:00 (mud wrap 60min) -->
+    <record id="apt_061" model="spa.appointment">
+        <field name="client_id" ref="client_rachel"/>
+        <field name="therapist_id" ref="therapist_elena"/>
+        <field name="room_id" ref="room_harmony"/>
+        <field name="appointment_date">2026-05-11 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_mud_wrap')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Jade: May 11 10:00-12:10 (pkg_nail_heaven gel mani+pedi 130min) -->
+    <record id="apt_062" model="spa.appointment">
+        <field name="client_id" ref="client_jessica"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-11 10:00:00</field>
+        <field name="package_id" ref="pkg_nail_heaven"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Aisha: May 11 10:00-12:00 (keratin treatment 90min... wait keratin is 90min not 120min)
+         Actually keratin is 90min so ends 11:30; then hair colour can go from 12:00-14:00 -->
+    <record id="apt_063" model="spa.appointment">
+        <field name="client_id" ref="client_amanda"/>
+        <field name="therapist_id" ref="therapist_aisha"/>
+        <field name="room_id" ref="room_hair"/>
+        <field name="appointment_date">2026-05-11 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_keratin')])]"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Bridal Package — May 13 (Sophia + Jade together in Couples Suite)
+         Jade: May 13 10:00 pkg_bridal (hot stone90+hydrafacial60+gel_mani60+gel_pedi70+blowdry45=325min=5h25min → ends 15:25)
+         Actually that's too long and Sophia does hot stone but Jade does nails/hair...
+         Let's simplify: Jade does the full pkg_bridal for one booking -->
+    <record id="apt_064" model="spa.appointment">
+        <field name="client_id" ref="client_claire"/>
+        <field name="therapist_id" ref="therapist_jade"/>
+        <field name="room_id" ref="room_nail"/>
+        <field name="appointment_date">2026-05-13 09:00:00</field>
+        <field name="package_id" ref="pkg_bridal"/>
+        <field name="state">draft</field>
+    </record>
+    <!-- Mia: May 13 10:00-11:00 (hydrafacial 60min) -->
+    <record id="apt_065" model="spa.appointment">
+        <field name="client_id" ref="client_priya"/>
+        <field name="therapist_id" ref="therapist_mia"/>
+        <field name="room_id" ref="room_vip"/>
+        <field name="appointment_date">2026-05-13 10:00:00</field>
+        <field name="service_ids" eval="[(6,0,[ref('svc_hydra_facial')])]"/>
+        <field name="state">draft</field>
+    </record>
+</odoo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Root menu -->
+    <menuitem id="menu_beauty_spa_root"
+              name="Beauty Spa"
+              web_icon="beauty_spa,static/description/icon.png"
+              sequence="80"/>
+
+    <!-- Appointments -->
+    <menuitem id="menu_beauty_spa_appointments"
+              name="Appointments"
+              parent="menu_beauty_spa_root"
+              sequence="10"/>
+
+    <menuitem id="menu_spa_appointment"
+              name="All Appointments"
+              parent="menu_beauty_spa_appointments"
+              action="action_spa_appointment"
+              sequence="10"/>
+
+
+    <!-- Services -->
+    <menuitem id="menu_beauty_spa_services"
+              name="Services"
+              parent="menu_beauty_spa_root"
+              sequence="20"/>
+
+    <menuitem id="menu_spa_service"
+              name="Services"
+              parent="menu_beauty_spa_services"
+              action="action_spa_service"
+              sequence="10"/>
+
+    <menuitem id="menu_spa_service_category"
+              name="Categories"
+              parent="menu_beauty_spa_services"
+              action="action_spa_service_category"
+              sequence="20"/>
+
+    <menuitem id="menu_spa_package"
+              name="Packages"
+              parent="menu_beauty_spa_services"
+              action="action_spa_package"
+              sequence="30"/>
+
+    <!-- Staff -->
+    <menuitem id="menu_beauty_spa_staff"
+              name="Staff"
+              parent="menu_beauty_spa_root"
+              sequence="30"/>
+
+    <menuitem id="menu_spa_therapist"
+              name="Therapists"
+              parent="menu_beauty_spa_staff"
+              action="action_spa_therapist"
+              sequence="10"/>
+
+    <menuitem id="menu_spa_room"
+              name="Treatment Rooms"
+              parent="menu_beauty_spa_staff"
+              action="action_spa_room"
+              sequence="20"/>
+
+    <!-- Configuration (managers only) -->
+    <menuitem id="menu_beauty_spa_config"
+              name="Configuration"
+              parent="menu_beauty_spa_root"
+              sequence="99"
+              groups="beauty_spa.group_spa_manager"/>
+
+    <menuitem id="menu_spa_config_categories"
+              name="Service Categories"
+              parent="menu_beauty_spa_config"
+              action="action_spa_service_category"
+              sequence="10"/>
+
+    <menuitem id="menu_spa_config_rooms"
+              name="Treatment Rooms"
+              parent="menu_beauty_spa_config"
+              action="action_spa_room"
+              sequence="20"/>
+</odoo>

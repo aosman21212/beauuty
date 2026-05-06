@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_spa_service_category_manager,spa.service.category manager,model_spa_service_category,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_service_category_receptionist,spa.service.category receptionist,model_spa_service_category,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_service_manager,spa.service manager,model_spa_service,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_service_receptionist,spa.service receptionist,model_spa_service,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_therapist_manager,spa.therapist manager,model_spa_therapist,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_therapist_receptionist,spa.therapist receptionist,model_spa_therapist,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_room_manager,spa.room manager,model_spa_room,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_room_receptionist,spa.room receptionist,model_spa_room,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_package_manager,spa.package manager,model_spa_package,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_package_receptionist,spa.package receptionist,model_spa_package,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_package_line_manager,spa.package.line manager,model_spa_package_line,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_package_line_receptionist,spa.package.line receptionist,model_spa_package_line,beauty_spa.group_spa_receptionist,1,0,0,0
+access_spa_appointment_manager,spa.appointment manager,model_spa_appointment,beauty_spa.group_spa_manager,1,1,1,1
+access_spa_appointment_receptionist,spa.appointment receptionist,model_spa_appointment,beauty_spa.group_spa_receptionist,1,1,1,0

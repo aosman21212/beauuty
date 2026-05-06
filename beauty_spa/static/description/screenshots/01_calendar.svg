@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+  <rect width="1400" height="860" fill="#f5f5f5"/>
+
+  <!-- TOP NAV -->
+  <rect x="0" y="0" width="1400" height="52" fill="#2c2c2c"/>
+  <text x="16" y="33" font-size="16" fill="#fff" font-weight="600" font-family="Arial,sans-serif">Beauty Spa</text>
+  <text x="180" y="33" font-size="14" fill="#fff" opacity="0.95" font-family="Arial,sans-serif">Appointments</text>
+  <text x="296" y="33" font-size="14" fill="#fff" opacity="0.5" font-family="Arial,sans-serif">Services</text>
+  <text x="370" y="33" font-size="14" fill="#fff" opacity="0.5" font-family="Arial,sans-serif">Staff</text>
+  <circle cx="1368" cy="26" r="16" fill="#e91e63"/>
+  <text x="1368" y="31" font-size="12" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif">A</text>
+
+  <!-- BREADCRUMB -->
+  <rect x="0" y="52" width="1400" height="44" fill="#fff"/>
+  <rect x="0" y="95" width="1400" height="1" fill="#dee2e6"/>
+  <text x="24" y="80" font-size="15" fill="#212529" font-weight="600" font-family="Arial,sans-serif">Appointments — Calendar</text>
+
+  <!-- View toggle + New button -->
+  <rect x="24" y="108" width="90" height="28" rx="4" fill="#e91e63"/>
+  <text x="69" y="127" font-size="13" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif">+ New</text>
+  <rect x="124" y="108" width="32" height="28" rx="4" fill="none" stroke="#dee2e6"/>
+  <text x="140" y="127" font-size="13" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">☰</text>
+  <rect x="160" y="108" width="32" height="28" rx="4" fill="#fff3f5" stroke="#e91e63"/>
+  <text x="176" y="127" font-size="13" fill="#e91e63" text-anchor="middle" font-family="Arial,sans-serif">📅</text>
+  <rect x="200" y="108" width="32" height="28" rx="4" fill="none" stroke="#dee2e6"/>
+  <text x="216" y="127" font-size="12" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">⊞</text>
+
+  <!-- Week nav -->
+  <text x="700" y="127" font-size="14" fill="#212529" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Week of 4 May 2026</text>
+  <text x="630" y="127" font-size="18" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">‹</text>
+  <text x="770" y="127" font-size="18" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">›</text>
+
+  <!-- CALENDAR GRID -->
+  <rect x="0" y="142" width="1400" height="700" fill="#fff"/>
+
+  <!-- Hour labels -->
+  <rect x="0" y="142" width="60" height="700" fill="#fafafa"/>
+  <line x1="60" y1="142" x2="60" y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <text x="50" y="220" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">08:00</text>
+  <text x="50" y="308" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">09:00</text>
+  <text x="50" y="396" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">10:00</text>
+  <text x="50" y="484" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">11:00</text>
+  <text x="50" y="572" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">12:00</text>
+  <text x="50" y="660" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">13:00</text>
+  <text x="50" y="748" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">14:00</text>
+  <text x="50" y="836" font-size="11" fill="#6c757d" text-anchor="end" font-family="Arial,sans-serif">15:00</text>
+
+  <!-- Horizontal hour lines -->
+  <line x1="60" y1="220" x2="1400" y2="220" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="308" x2="1400" y2="308" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="396" x2="1400" y2="396" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="484" x2="1400" y2="484" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="572" x2="1400" y2="572" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="660" x2="1400" y2="660" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="748" x2="1400" y2="748" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- Day columns header -->
+  <rect x="60" y="142" width="1340" height="40" fill="#fce4ec"/>
+  <!-- Day headers: Mon-Sun -->
+  <text x="155"  y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Mon 4</text>
+  <text x="346"  y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Tue 5</text>
+  <text x="537"  y="167" font-size="13" fill="#fff"     text-anchor="middle" font-weight="700" font-family="Arial,sans-serif">Wed 6</text>
+  <rect x="490" y="143" width="95" height="38" fill="#e91e63" rx="0"/>
+  <text x="537"  y="167" font-size="13" fill="#fff"     text-anchor="middle" font-weight="700" font-family="Arial,sans-serif">Wed 6</text>
+  <text x="728"  y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Thu 7</text>
+  <text x="919"  y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Fri 8</text>
+  <text x="1110" y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Sat 9</text>
+  <text x="1301" y="167" font-size="13" fill="#7b2d42" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Sun 10</text>
+
+  <!-- Column separators -->
+  <line x1="252"  y1="182" x2="252"  y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="443"  y1="182" x2="443"  y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="634"  y1="182" x2="634"  y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="825"  y1="182" x2="825"  y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="1016" y1="182" x2="1016" y2="842" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="1207" y1="182" x2="1207" y2="842" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- ── APPOINTMENTS (Wed 6 May column, x≈490–634) ── -->
+  <!-- Jade: Manicure+Pedicure 09:00–10:30 (308→440) -->
+  <rect x="495" y="308" width="130" height="132" rx="4" fill="#ad145720" stroke="#ad1457" stroke-width="1.5"/>
+  <rect x="495" y="308" width="5"   height="132" rx="2" fill="#ad1457"/>
+  <text x="505" y="324" font-size="11" fill="#4a0020" font-weight="600" font-family="Arial,sans-serif">09:00 Jade Williams</text>
+  <text x="505" y="340" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">Classic Manicure</text>
+  <text x="505" y="354" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">Classic Pedicure</text>
+  <text x="505" y="368" font-size="10" fill="#6c757d" font-family="Arial,sans-serif">Nail Studio</text>
+  <text x="505" y="382" font-size="10" fill="#e91e63" font-weight="600" font-family="Arial,sans-serif">$80.00</text>
+
+  <!-- Sophia: Swedish Massage 10:00–11:00 (396→484) -->
+  <rect x="495" y="396" width="130" height="88" rx="4" fill="#e91e6320" stroke="#e91e63" stroke-width="1.5"/>
+  <rect x="495" y="396" width="5"   height="88" rx="2" fill="#e91e63"/>
+  <text x="505" y="412" font-size="11" fill="#4a0020" font-weight="600" font-family="Arial,sans-serif">10:00 Sophia Laurent</text>
+  <text x="505" y="428" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">Swedish Massage</text>
+  <text x="505" y="442" font-size="10" fill="#6c757d" font-family="Arial,sans-serif">Serenity Suite</text>
+  <text x="505" y="456" font-size="10" fill="#e91e63" font-weight="600" font-family="Arial,sans-serif">$80.00</text>
+
+  <!-- Mia: HydraFacial 11:30–12:30 (506→572+) -->
+  <rect x="495" y="506" width="130" height="88" rx="4" fill="#f0629220" stroke="#f06292" stroke-width="1.5"/>
+  <rect x="495" y="506" width="5"   height="88" rx="2" fill="#f06292"/>
+  <text x="505" y="522" font-size="11" fill="#4a0020" font-weight="600" font-family="Arial,sans-serif">11:30 Mia Chen</text>
+  <text x="505" y="538" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">HydraFacial</text>
+  <text x="505" y="552" font-size="10" fill="#6c757d" font-family="Arial,sans-serif">Harmony Room</text>
+  <text x="505" y="566" font-size="10" fill="#e91e63" font-weight="600" font-family="Arial,sans-serif">$150.00</text>
+
+  <!-- Thu 7 — Elena appointment -->
+  <rect x="638" y="440" width="178" height="88" rx="4" fill="#c2185b20" stroke="#c2185b" stroke-width="1.5"/>
+  <rect x="638" y="440" width="5"   height="88" rx="2" fill="#c2185b"/>
+  <text x="648" y="456" font-size="11" fill="#4a0020" font-weight="600" font-family="Arial,sans-serif">10:30 Elena Rossi</text>
+  <text x="648" y="472" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">Relaxation Retreat Pkg</text>
+  <text x="648" y="486" font-size="10" fill="#6c757d" font-family="Arial,sans-serif">Couples Suite</text>
+  <text x="648" y="500" font-size="10" fill="#e91e63" font-weight="600" font-family="Arial,sans-serif">$175.00</text>
+
+  <!-- Fri 8 — Full Pamper Day -->
+  <rect x="829" y="308" width="178" height="264" rx="4" fill="#88000020" stroke="#880000" stroke-width="1.5"/>
+  <rect x="829" y="308" width="5"   height="264" rx="2" fill="#880000"/>
+  <text x="839" y="324" font-size="11" fill="#4a0020" font-weight="600" font-family="Arial,sans-serif">09:00 Sophia Laurent</text>
+  <text x="839" y="340" font-size="10" fill="#7b2d42" font-family="Arial,sans-serif">Full Pamper Day</text>
+  <text x="839" y="356" font-size="10" fill="#6c757d" font-family="Arial,sans-serif">Serenity Suite</text>
+  <text x="839" y="372" font-size="10" fill="#e91e63" font-weight="600" font-family="Arial,sans-serif">$280.00</text>
+
+  <!-- LABEL -->
+  <rect x="0" y="830" width="370" height="30" fill="#e91e63" opacity="0.9"/>
+  <text x="12" y="851" font-size="14" fill="#fff" font-weight="600" font-family="Arial,sans-serif">📅 Appointments — Calendar Week View</text>
+</svg>

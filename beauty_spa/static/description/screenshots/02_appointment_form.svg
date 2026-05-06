@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+  <rect width="1400" height="860" fill="#f5f5f5"/>
+
+  <!-- TOP NAV -->
+  <rect x="0" y="0" width="1400" height="52" fill="#2c2c2c"/>
+  <text x="16" y="33" font-size="16" fill="#fff" font-weight="600" font-family="Arial,sans-serif">Beauty Spa</text>
+  <text x="180" y="33" font-size="14" fill="#fff" opacity="0.95" font-family="Arial,sans-serif">Appointments</text>
+  <circle cx="1368" cy="26" r="16" fill="#e91e63"/>
+  <text x="1368" y="31" font-size="12" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif">A</text>
+
+  <!-- BREADCRUMB -->
+  <rect x="0" y="52" width="1400" height="44" fill="#fff"/>
+  <rect x="0" y="95" width="1400" height="1" fill="#dee2e6"/>
+  <text x="24" y="80" font-size="13" fill="#6c757d" font-family="Arial,sans-serif">Appointments /</text>
+  <text x="130" y="80" font-size="15" fill="#212529" font-weight="600" font-family="Arial,sans-serif">APT/2026/05/0001</text>
+
+  <!-- FORM CARD -->
+  <rect x="16" y="104" width="1368" height="730" rx="6" fill="#fff" stroke="#dee2e6"/>
+
+  <!-- STATUS BAR HEADER -->
+  <rect x="16" y="104" width="1368" height="56" rx="6" fill="#fce4ec"/>
+
+  <!-- Action Buttons -->
+  <rect x="28" y="116" width="100" height="32" rx="4" fill="#e91e63"/>
+  <text x="78" y="136" font-size="13" fill="#fff" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Start</text>
+
+  <rect x="138" y="116" width="130" height="32" rx="4" fill="#e91e63"/>
+  <text x="203" y="136" font-size="13" fill="#fff" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Create Invoice</text>
+
+  <rect x="278" y="116" width="80" height="32" rx="4" fill="none" stroke="#dee2e6"/>
+  <text x="318" y="136" font-size="13" fill="#495057" text-anchor="middle" font-family="Arial,sans-serif">Cancel</text>
+
+  <!-- Status bar pills -->
+  <g transform="translate(750,120)">
+    <rect x="0"   y="0" width="90"  height="24" rx="12" fill="#6c757d" opacity="0.2"/>
+    <text x="45"  y="16" font-size="11" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">New</text>
+    <line x1="90" y1="12" x2="110" y2="12" stroke="#6c757d" stroke-width="1" opacity="0.4"/>
+    <rect x="110" y="0" width="110" height="24" rx="12" fill="#0dcaf0" opacity="0.25" stroke="#0dcaf0"/>
+    <text x="165" y="16" font-size="11" fill="#055160" text-anchor="middle" font-family="Arial,sans-serif">✓ Confirmed</text>
+    <line x1="220" y1="12" x2="240" y2="12" stroke="#6c757d" stroke-width="1" opacity="0.4"/>
+    <rect x="240" y="0" width="110" height="24" rx="12" fill="#fff3cd" stroke="#ffc107"/>
+    <text x="295" y="16" font-size="11" fill="#664d03" text-anchor="middle" font-family="Arial,sans-serif">In Progress</text>
+    <line x1="350" y1="12" x2="370" y2="12" stroke="#6c757d" stroke-width="1" opacity="0.4"/>
+    <rect x="370" y="0" width="80" height="24" rx="12" fill="none" stroke="#dee2e6"/>
+    <text x="410" y="16" font-size="11" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">Done</text>
+  </g>
+
+  <!-- SMART BUTTONS ROW -->
+  <rect x="16" y="160" width="1368" height="52" fill="#f8f9fa" stroke-bottom="#dee2e6"/>
+  <line x1="16" y1="212" x2="1384" y2="212" stroke="#dee2e6"/>
+  <rect x="28" y="168" width="90" height="36" rx="4" fill="#fff" stroke="#dee2e6"/>
+  <text x="73" y="181" font-size="10" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">Invoice</text>
+  <text x="73" y="197" font-size="12" fill="#28a745" text-anchor="middle" font-weight="600" font-family="Arial,sans-serif">Paid</text>
+
+  <!-- FORM TITLE -->
+  <text x="36" y="248" font-size="22" fill="#212529" font-weight="700" font-family="Arial,sans-serif">APT/2026/05/0001</text>
+
+  <!-- LEFT GROUP: Appointment Details -->
+  <text x="36" y="286" font-size="13" fill="#6c757d" font-weight="600" font-family="Arial,sans-serif">Appointment Details</text>
+  <line x1="36" y1="292" x2="680" y2="292" stroke="#dee2e6"/>
+
+  <text x="36"  y="318" font-size="13" fill="#495057" font-family="Arial,sans-serif">Client</text>
+  <text x="200" y="318" font-size="13" fill="#212529" font-family="Arial,sans-serif">Deco Addict</text>
+
+  <text x="36"  y="346" font-size="13" fill="#495057" font-family="Arial,sans-serif">Therapist</text>
+  <text x="200" y="346" font-size="13" fill="#212529" font-family="Arial,sans-serif">Sophia Laurent</text>
+
+  <text x="36"  y="374" font-size="13" fill="#495057" font-family="Arial,sans-serif">Room</text>
+  <text x="200" y="374" font-size="13" fill="#212529" font-family="Arial,sans-serif">Serenity Suite</text>
+
+  <text x="36"  y="402" font-size="13" fill="#495057" font-family="Arial,sans-serif">Date &amp; Time</text>
+  <text x="200" y="402" font-size="13" fill="#212529" font-family="Arial,sans-serif">05/06/2026 10:00:00</text>
+
+  <text x="36"  y="430" font-size="13" fill="#495057" font-family="Arial,sans-serif">Duration (min)</text>
+  <text x="200" y="430" font-size="13" fill="#212529" font-family="Arial,sans-serif">60.0</text>
+
+  <text x="36"  y="458" font-size="13" fill="#495057" font-family="Arial,sans-serif">End</text>
+  <text x="200" y="458" font-size="13" fill="#212529" font-family="Arial,sans-serif">05/06/2026 11:00:00</text>
+
+  <!-- RIGHT GROUP: Pricing -->
+  <text x="720" y="286" font-size="13" fill="#6c757d" font-weight="600" font-family="Arial,sans-serif">Pricing</text>
+  <line x1="720" y1="292" x2="1360" y2="292" stroke="#dee2e6"/>
+
+  <text x="720"  y="318" font-size="13" fill="#495057" font-family="Arial,sans-serif">Package</text>
+  <text x="900" y="318" font-size="13" fill="#212529" font-family="Arial,sans-serif">—</text>
+
+  <text x="720"  y="346" font-size="13" fill="#495057" font-family="Arial,sans-serif">Total</text>
+  <text x="900" y="346" font-size="15" fill="#e91e63" font-weight="700" font-family="Arial,sans-serif">$ 80.00</text>
+
+  <text x="720"  y="374" font-size="13" fill="#495057" font-family="Arial,sans-serif">Currency</text>
+  <text x="900" y="374" font-size="13" fill="#212529" font-family="Arial,sans-serif">USD</text>
+
+  <!-- NOTEBOOK TABS -->
+  <rect x="28" y="490" width="100" height="32" rx="4" fill="#fff3f5" stroke="#e91e63"/>
+  <text x="78" y="511" font-size="13" fill="#e91e63" text-anchor="middle" font-family="Arial,sans-serif">Services</text>
+  <rect x="136" y="490" width="80" height="32" rx="4" fill="none" stroke="#dee2e6"/>
+  <text x="176" y="511" font-size="13" fill="#6c757d" text-anchor="middle" font-family="Arial,sans-serif">Notes</text>
+
+  <!-- Services tags -->
+  <rect x="28" y="530" width="160" height="28" rx="14" fill="#fce4ec" stroke="#e91e63"/>
+  <text x="108" y="549" font-size="12" fill="#880e4f" text-anchor="middle" font-family="Arial,sans-serif">Swedish Massage</text>
+
+  <!-- CHATTER -->
+  <line x1="16" y1="590" x2="1384" y2="590" stroke="#dee2e6"/>
+  <text x="36" y="616" font-size="14" fill="#212529" font-weight="600" font-family="Arial,sans-serif">Log note   Send message   Schedule activity</text>
+
+  <!-- Log entry -->
+  <circle cx="52" cy="660" r="18" fill="#e91e63"/>
+  <text x="52" y="665" font-size="12" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif">A</text>
+  <rect x="80" y="642" width="600" height="60" rx="4" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="96" y="662" font-size="12" fill="#495057" font-family="Arial,sans-serif" font-weight="600">Administrator  ·  05/06/2026 08:30</text>
+  <text x="96" y="682" font-size="12" fill="#6c757d" font-family="Arial,sans-serif">Appointment confirmed for Sophia Laurent at 10:00.</text>
+
+  <!-- LABEL -->
+  <rect x="0" y="830" width="360" height="30" fill="#e91e63" opacity="0.9"/>
+  <text x="12" y="851" font-size="14" fill="#fff" font-weight="600" font-family="Arial,sans-serif">📋 Appointment Form — Status &amp; Chatter</text>
+</svg>

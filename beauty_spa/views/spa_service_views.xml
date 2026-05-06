@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List -->
+    <record id="view_spa_service_list" model="ir.ui.view">
+        <field name="name">spa.service.list</field>
+        <field name="model">spa.service</field>
+        <field name="arch" type="xml">
+            <list string="Services">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="category_id"/>
+                <field name="duration" string="Duration (min)"/>
+                <field name="price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="currency_id" column_invisible="1"/>
+                <field name="active" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form -->
+    <record id="view_spa_service_form" model="ir.ui.view">
+        <field name="name">spa.service.form</field>
+        <field name="model">spa.service</field>
+        <field name="arch" type="xml">
+            <form string="Spa Service">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="Service name…"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="category_id"/>
+                            <field name="duration"/>
+                            <field name="price" widget="monetary"
+                                   options="{'currency_field': 'currency_id'}"/>
+                            <field name="currency_id"/>
+                        </group>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <field name="description" widget="html"
+                           placeholder="Service description…"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Kanban -->
+    <record id="view_spa_service_kanban" model="ir.ui.view">
+        <field name="name">spa.service.kanban</field>
+        <field name="model">spa.service</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name"/>
+                <field name="category_id"/>
+                <field name="duration"/>
+                <field name="price"/>
+                <field name="currency_id"/>
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_global_click">
+                            <strong><field name="name"/></strong>
+                            <div class="text-muted">
+                                <field name="category_id"/> ·
+                                <field name="duration"/> min
+                            </div>
+                            <div class="fw-bold text-primary">
+                                <field name="price" widget="monetary"
+                                       options="{'currency_field': 'currency_id'}"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_spa_service" model="ir.actions.act_window">
+        <field name="name">Services</field>
+        <field name="res_model">spa.service</field>
+        <field name="view_mode">list,kanban,form</field>
+    </record>
+</odoo>
