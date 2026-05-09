@@ -17,10 +17,16 @@ Complete salon & spa management for Odoo 19:
 - PDF appointment confirmation & receipt
 - Kanban board by appointment status
 - Demo data included
+
+Contact & Support:
+------------------
+- Email: abdzoro89@gmail.com / a.osman@bab.com.sa
+- Phone: +966562984106 / +966553368212
     """,
-    'author': 'abdzoro89',
+    'author': 'Abdulkrim Osman (+966562984106, +966553368212)',
     'website': 'https://apps.odoo.com',
     'support': 'abdzoro89@gmail.com',
+    'maintainer': 'a.osman@bab.com.sa',
     'depends': ['base', 'mail', 'account'],
     'data': [
         'security/res_groups.xml',
