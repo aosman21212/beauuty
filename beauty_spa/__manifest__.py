@@ -23,7 +23,7 @@ Contact & Support:
 - Email: abdzoro89@gmail.com / a.osman@bab.com.sa
 - Phone: +966562984106 / +966553368212
     """,
-    'author': 'Abdulkrim Osman (+966562984106, +966553368212)',
+    'author': 'leapai.ai',
     'website': 'https://leapai.ai',
     'support': 'abdzoro89@gmail.com',
     'maintainer': 'a.osman@bab.com.sa',
